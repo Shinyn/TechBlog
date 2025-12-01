@@ -1,0 +1,12 @@
+:root {
+  --primary-blue: #2563eb;
+  --secondary-blue: #1f40b0;
+  --footer-color: #111827;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
