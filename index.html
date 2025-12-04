@@ -10,6 +10,7 @@
   <body>
     <!-- Header -->
     <header>
+      <!-- Ska bara finnas 1 h1 på sidan -->
       <h1>TechBlog</h1>
       <nav>
         <ul>
@@ -33,13 +34,13 @@
         </div>
       </section>
       <section>
-        <div>
+        <div class="featuredHeading">
           <h2>Featured articles</h2>
           <p>Latest insights and tutorials from our expert writers</p>
         </div>
         <article>
-          <img src="" alt="" />
-          <div>
+          <img src="developer.jpg" alt="code on a screen" />
+          <div class="topicDate">
             <p>Web Development</p>
             <p>January 15, 2024</p>
           </div>
@@ -51,7 +52,7 @@
             </p>
           </div>
           <div>
-            <img src="" alt="" />
+            <img class="profilePicture" src="JohnSmith.avif" alt="Profile picture of John" />
             <h4>John Smith</h4>
             <p>Senior Developer</p>
           </div>
@@ -61,8 +62,8 @@
           </div>
         </article>
         <article>
-          <img src="" alt="" />
-          <div>
+          <img src="developer2.webp" alt="developer at a desk" />
+          <div class="topicDate">
             <p>Accessibility</p>
             <p>January 12, 2024</p>
           </div>
@@ -74,7 +75,7 @@
             </p>
           </div>
           <div>
-            <img src="" alt="" />
+            <img class="profilePicture" src="SarahJohnson.avif" alt="Profile picture of Sarah" />
             <h4>Sarah Johnson</h4>
             <p>UX Engineer</p>
           </div>
@@ -83,19 +84,63 @@
             <p>12 min read</p>
           </div>
         </article>
-      </section>
-      <aside>
-        <nav>
-          <h2>Categories</h2>
+        <nav class="pageNavigation">
           <ul>
-            <li><a href="/webDevelopment">Web Development</a></li>
-            <li><a href="/design">Design</a></li>
-            <li><a href="/accessibility"></a>Accessibility</li>
-            <li><a href="/javascript"></a>Javascript</li>
+            <li>
+              <button>&lt;</button>
+            </li>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li>
+              <button>&gt;</button>
+            </li>
           </ul>
         </nav>
-      </aside>
+      </section>
     </main>
+
+    <!-- Aside -->
+    <aside>
+      <div class="card">
+        <h2>Categories</h2>
+        <nav>
+          <ul>
+            <li><a href="/webDevelopment">Web Development</a> <span>(12)</span></li>
+            <li><a href="/design">Design</a> <span>(8)</span></li>
+            <li><a href="/accessibility">Accessibility</a><span>(6)</span></li>
+            <li><a href="/javascript">Javascript</a><span>(15)</span></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="card">
+        <h2>Stay Updated</h2>
+        <p>Get the latest articles delivered to you inbox weekly.</p>
+        <input type="email" name="email" id="email" placeholder="your@email.com" />
+        <button>Subscribe</button>
+      </div>
+      <div class="card">
+        <h2>Popular Posts</h2>
+        <article>
+          <img src="codeImage.jpg" alt="Code on a screen" />
+          <div class="articleInfo">
+            <p>Essential JavaScript array methods</p>
+            <p>
+              <small>5 min read</small>
+            </p>
+          </div>
+        </article>
+        <article>
+          <img src="pcImage.jpg" alt="Drawing of a computer" />
+          <div class="articleInfo">
+            <p>Responsive design best practices</p>
+            <p>
+              <small>7 min read</small>
+            </p>
+          </div>
+        </article>
+      </div>
+    </aside>
 
     <!-- Footer -->
     <footer>

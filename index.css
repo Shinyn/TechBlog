@@ -1,13 +1,21 @@
+/* Global variables */
+
 :root {
   --primary-blue: #2563eb;
   --secondary-blue: #1f40b0;
-  --footer-color: #111827;
+  --text-blue: #1e40af;
+  --text-green: #166534;
+  --text-green-accent: #dcfce7;
+  --light-black: #111827;
   --light-grey: #9ca3af;
+  --medium-light-grey: #6b7280;
   --medium-grey: #4b5563;
   --light-blue: #dbeafe;
   --light-red: #ef4444;
+  --light-white: #f9fafb;
+  --blue-white: #dbeafe;
 
-  --button-radius: 5px;
+  --border-radius: 5px;
 }
 
 * {
@@ -15,6 +23,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--light-white);
+}
+
+img {
+  max-width: 35rem;
 }
 
 ul,
@@ -26,6 +42,7 @@ header {
   display: flex;
   justify-content: space-around;
   padding: 1rem;
+  background-color: white;
 
   & h1 {
     font-size: x-large;
@@ -39,7 +56,6 @@ header {
       margin-right: 2rem;
       margin-top: 0.5rem;
 
-      /* Borde ändras till :first-child */
       & .currentTab {
         color: var(--primary-blue);
       }
@@ -55,7 +71,7 @@ header {
   & button {
     color: white;
     border: none;
-    border-radius: var(--button-radius);
+    border-radius: var(--border-radius);
     padding: 0.6rem 1rem;
     background-color: var(--primary-blue);
 
@@ -92,18 +108,156 @@ main {
     }
 
     & input {
+      border: none;
       padding: 0.5rem;
-      border-radius: 0.5rem;
+      border-radius: var(--border-radius);
       width: 20rem;
     }
     /* } */
+  }
+
+  & section {
+    /* background-color: aqua; */
+
+    & > .featuredHeading {
+      background-color: salmon;
+    }
+
+    & article {
+      background-color: seagreen;
+      max-width: 35rem;
+
+      & .topicDate {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+
+        & :first-child {
+          color: #1f40b0;
+        }
+
+        background-color: rebeccapurple;
+      }
+
+      & .profilePicture {
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  & .pageNavigation ul {
+    /* background-color: red; */
+    display: flex;
+
+    & button {
+      padding: 1rem;
+    }
+
+    & :nth-child(2) {
+      background-color: lime;
+      background-color: #1f40b0;
+      color: white;
+    }
+
+    & li {
+      border-radius: var(--border-radius);
+      margin: 2px;
+      padding: 1rem;
+    }
+  }
+}
+
+aside {
+  padding: 2rem;
+  gap: 2rem;
+
+  & h2 {
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  & > :nth-child(2) {
+    background-color: var(--primary-blue);
+    color: white;
+
+    & p {
+      color: var(--blue-white);
+    }
+
+    & input,
+    button {
+      border-radius: var(--border-radius);
+      border: none;
+      padding: 0.7rem 1rem;
+      font-size: large;
+    }
+
+    & input {
+      color: var(--light-grey);
+    }
+
+    & button {
+      color: var(--primary-blue);
+      font-weight: 500;
+    }
+  }
+
+  & .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: calc(var(--border-radius) * 2);
+    width: 25rem;
+    min-height: 15rem;
+    padding: 1.5rem;
+    margin: 1.6rem;
+    box-shadow: 0px 2px 3px var(--light-grey);
+
+    & nav li {
+      display: flex;
+      justify-content: space-between;
+      color: var(--light-grey);
+      padding: 0.6rem 0.5rem;
+
+      & a {
+        text-decoration: none;
+        color: var(--medium-grey);
+      }
+    }
+
+    & article {
+      display: flex;
+      gap: 1rem;
+
+      & .articleInfo {
+        padding-top: var(--border-radius);
+
+        & p {
+          color: var(--light-black);
+          font-weight: 550;
+        }
+
+        & small {
+          color: var(--medium-light-grey);
+        }
+      }
+    }
+
+    & img {
+      width: 4rem;
+      height: 4rem;
+      border-radius: var(--border-radius);
+    }
   }
 }
 
 footer {
   display: flex;
   flex-direction: column;
-  background-color: var(--footer-color);
+  background-color: var(--light-black);
   color: var(--light-grey);
   padding: 0 13rem;
 
