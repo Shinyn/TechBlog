@@ -29,7 +29,8 @@
       <p>Discover the latest insights in web development, design and technology</p>
       <div class="searchContainer">
         <i class="fa fa-search" aria-hidden="true"></i>
-        <input type="text" role="search" placeholder="Search articles..." />
+        <label for="searchField" class="visually-hidden">Search</label>
+        <input id="searchField" type="text" role="search" placeholder="Search articles..." />
       </div>
     </section>
 
@@ -107,8 +108,7 @@
 
       <!-- Aside -->
       <aside>
-        <!-- Gör om till sections (samtliga cards) -->
-        <div class="card">
+        <section class="card">
           <h2>Categories</h2>
           <nav>
             <ul>
@@ -118,20 +118,21 @@
               <li><a href="/javascript">Javascript</a><span>(15)</span></li>
             </ul>
           </nav>
-        </div>
-        <div class="card">
+        </section>
+        <section class="card">
           <h2>Stay Updated</h2>
           <p>Get the latest articles delivered to you inbox weekly.</p>
-          <input type="email" name="email" id="email" placeholder="your@email.com" />
+
+          <label for="email" class="visually-hidden">Search</label>
+          <input id="email" type="email" name="email" placeholder="your@email.com" />
           <button>Subscribe</button>
-        </div>
-        <div class="card">
+        </section>
+        <section class="card">
           <h2>Popular Posts</h2>
           <article>
             <img src="codeImage.jpg" alt="Code on a screen" />
             <div class="articleInfo">
-              <!-- Gör om till h3 för semantiken -->
-              <p>Essential JavaScript array methods</p>
+              <h3>Essential JavaScript array methods</h3>
               <p>
                 <small>5 min read</small>
               </p>
@@ -140,13 +141,13 @@
           <article>
             <img src="pcImage.jpg" alt="Drawing of a computer" />
             <div class="articleInfo">
-              <p>Responsive design best practices</p>
+              <h3>Responsive design best practices</h3>
               <p>
                 <small>7 min read</small>
               </p>
             </div>
           </article>
-        </div>
+        </section>
       </aside>
     </div>
     <!-- Footer -->
