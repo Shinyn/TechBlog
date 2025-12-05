@@ -23,125 +23,130 @@
       <button class="subscribe"><i class="fa fa-bell" aria-hidden="true"></i>Subscribe</button>
     </header>
 
-    <!-- Main -->
-    <main>
-      <section id="banner">
-        <h1>Welcome to TechBlog</h1>
-        <p>Discover the latest insights in web development, design and technology</p>
-        <div class="searchContainer">
-          <i class="fa fa-search" aria-hidden="true"></i>
-          <input type="text" role="search" placeholder="Search articles..." />
-        </div>
-      </section>
-      <section>
-        <div class="featuredHeading">
-          <h2>Featured articles</h2>
-          <p>Latest insights and tutorials from our expert writers</p>
-        </div>
-        <article>
-          <img src="developer.jpg" alt="code on a screen" />
-          <div class="topicDate">
-            <p>Web Development</p>
-            <p>January 15, 2024</p>
-          </div>
-          <div>
-            <h3>Modern CSS Grid techniques for responsive design</h3>
-            <p>
-              Learn how to create flexible and responsive layouts using the latest CSS Grid features. This comprehensive
-              covers everything from basic grid concepts to advanced techniques.
-            </p>
-          </div>
-          <div>
-            <img class="profilePicture" src="JohnSmith.avif" alt="Profile picture of John" />
-            <h4>John Smith</h4>
-            <p>Senior Developer</p>
-          </div>
-          <div>
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <p>8 min read</p>
-          </div>
-        </article>
-        <article>
-          <img src="developer2.webp" alt="developer at a desk" />
-          <div class="topicDate">
-            <p>Accessibility</p>
-            <p>January 12, 2024</p>
-          </div>
-          <div>
-            <h3>Building accessibile web applications: a complete guide</h3>
-            <p>
-              Discover essential techniques for creating inclusive web experiences. From semantic HTML to ARIA
-              attributes, learn how to make you applications accessibile to all users.
-            </p>
-          </div>
-          <div>
-            <img class="profilePicture" src="SarahJohnson.avif" alt="Profile picture of Sarah" />
-            <h4>Sarah Johnson</h4>
-            <p>UX Engineer</p>
-          </div>
-          <div>
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <p>12 min read</p>
-          </div>
-        </article>
-        <nav class="pageNavigation">
-          <ul>
-            <li>
-              <button>&lt;</button>
-            </li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li>
-              <button>&gt;</button>
-            </li>
-          </ul>
-        </nav>
-      </section>
-    </main>
+    <!-- Banner -->
+    <section id="banner">
+      <h1>Welcome to TechBlog</h1>
+      <p>Discover the latest insights in web development, design and technology</p>
+      <div class="searchContainer">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" role="search" placeholder="Search articles..." />
+      </div>
+    </section>
 
-    <!-- Aside -->
-    <aside>
-      <div class="card">
-        <h2>Categories</h2>
-        <nav>
-          <ul>
-            <li><a href="/webDevelopment">Web Development</a> <span>(12)</span></li>
-            <li><a href="/design">Design</a> <span>(8)</span></li>
-            <li><a href="/accessibility">Accessibility</a><span>(6)</span></li>
-            <li><a href="/javascript">Javascript</a><span>(15)</span></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="card">
-        <h2>Stay Updated</h2>
-        <p>Get the latest articles delivered to you inbox weekly.</p>
-        <input type="email" name="email" id="email" placeholder="your@email.com" />
-        <button>Subscribe</button>
-      </div>
-      <div class="card">
-        <h2>Popular Posts</h2>
-        <article>
-          <img src="codeImage.jpg" alt="Code on a screen" />
-          <div class="articleInfo">
-            <p>Essential JavaScript array methods</p>
-            <p>
-              <small>5 min read</small>
-            </p>
+    <div id="mainContent">
+      <!-- Main -->
+      <main>
+        <section>
+          <div class="featuredHeading">
+            <h2>Featured articles</h2>
+            <p>Latest insights and tutorials from our expert writers</p>
           </div>
-        </article>
-        <article>
-          <img src="pcImage.jpg" alt="Drawing of a computer" />
-          <div class="articleInfo">
-            <p>Responsive design best practices</p>
-            <p>
-              <small>7 min read</small>
-            </p>
-          </div>
-        </article>
-      </div>
-    </aside>
+          <article>
+            <img src="developer.jpg" alt="code on a screen" />
+            <div class="topicDate">
+              <p>Web Development</p>
+              <p>January 15, 2024</p>
+            </div>
+            <div class="articleInfo">
+              <h3>Modern CSS Grid techniques for responsive design</h3>
+              <p>
+                Learn how to create flexible and responsive layouts using the latest CSS Grid features. This
+                comprehensive covers everything from basic grid concepts to advanced techniques.
+              </p>
+            </div>
+            <div class="articleBottom">
+              <div class="authorInfo">
+                <img class="profilePicture" src="JohnSmith.avif" alt="Profile picture of John" />
+                <div class="nameAndJob">
+                  <h4>John Smith</h4>
+                  <p>Senior Developer</p>
+                </div>
+              </div>
+              <p><i class="fa fa-clock-o" aria-hidden="true"></i> 8 min read</p>
+            </div>
+          </article>
+          <article>
+            <img src="developer2.webp" alt="developer at a desk" />
+            <div class="topicDate">
+              <p class="heyImGreen">Accessibility</p>
+              <p>January 12, 2024</p>
+            </div>
+            <div class="articleInfo">
+              <h3>Building accessibile web applications: a complete guide</h3>
+              <p>
+                Discover essential techniques for creating inclusive web experiences. From semantic HTML to ARIA
+                attributes, learn how to make you applications accessibile to all users.
+              </p>
+            </div>
+            <div class="articleBottom">
+              <div class="authorInfo">
+                <img class="profilePicture" src="SarahJohnson.avif" alt="Profile picture of Sarah" />
+                <div class="nameAndJob">
+                  <h4>Sarah Johnson</h4>
+                  <p>UX Engineer</p>
+                </div>
+              </div>
+              <p><i class="fa fa-clock-o" aria-hidden="true"></i> 12 min read</p>
+            </div>
+          </article>
+          <nav class="pageNavigation">
+            <ul>
+              <li>
+                <button>&lt;</button>
+              </li>
+              <li><button>1</button></li>
+              <li><button>2</button></li>
+              <li><button>3</button></li>
+              <li>
+                <button>&gt;</button>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </main>
 
+      <!-- Aside -->
+      <aside>
+        <div class="card">
+          <h2>Categories</h2>
+          <nav>
+            <ul>
+              <li><a href="/webDevelopment">Web Development</a> <span>(12)</span></li>
+              <li><a href="/design">Design</a> <span>(8)</span></li>
+              <li><a href="/accessibility">Accessibility</a><span>(6)</span></li>
+              <li><a href="/javascript">Javascript</a><span>(15)</span></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="card">
+          <h2>Stay Updated</h2>
+          <p>Get the latest articles delivered to you inbox weekly.</p>
+          <input type="email" name="email" id="email" placeholder="your@email.com" />
+          <button>Subscribe</button>
+        </div>
+        <div class="card">
+          <h2>Popular Posts</h2>
+          <article>
+            <img src="codeImage.jpg" alt="Code on a screen" />
+            <div class="articleInfo">
+              <p>Essential JavaScript array methods</p>
+              <p>
+                <small>5 min read</small>
+              </p>
+            </div>
+          </article>
+          <article>
+            <img src="pcImage.jpg" alt="Drawing of a computer" />
+            <div class="articleInfo">
+              <p>Responsive design best practices</p>
+              <p>
+                <small>7 min read</small>
+              </p>
+            </div>
+          </article>
+        </div>
+      </aside>
+    </div>
     <!-- Footer -->
     <footer>
       <div id="footerMainDiv">
