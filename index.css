@@ -103,20 +103,27 @@ header {
     color: var(--light-blue);
   }
 
-  /* & .searchContainer { */
-  background-color: red;
+  & .searchContainer {
+    display: inline-block;
+    position: relative;
 
-  & .fa-search {
-    color: var(--light-grey);
-  }
+    & .fa-search {
+      color: var(--light-grey);
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: small;
+    }
 
-  & input {
-    border: none;
-    padding: 0.5rem;
-    border-radius: var(--border-radius);
-    width: 20rem;
+    & input {
+      border: none;
+      padding: 0.7rem;
+      padding-left: 2.2rem;
+      border-radius: var(--border-radius);
+      width: 20rem;
+    }
   }
-  /* } */
 }
 
 #mainContent {
@@ -144,7 +151,6 @@ main {
     }
 
     & article {
-      /* background-color: #166534; */
       max-width: 43rem;
       margin-bottom: 1rem;
       border-radius: calc(var(--border-radius) * 2);
