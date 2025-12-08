@@ -66,15 +66,15 @@ header {
   padding: 1rem;
   background-color: white;
 
-  & h1 {
+  h1 {
     font-size: x-large;
     font-weight: 700;
   }
 
-  & nav ul {
+  nav ul {
     display: flex;
 
-    & li {
+    li {
       margin-right: 2rem;
       margin-top: 0.5rem;
 
@@ -82,7 +82,7 @@ header {
         color: var(--primary-blue);
       }
 
-      & a {
+      a {
         text-decoration: none;
         color: var(--medium-grey);
         font-weight: 500;
@@ -90,14 +90,14 @@ header {
     }
   }
 
-  & button {
+  button {
     color: white;
     border: none;
     border-radius: var(--border-radius);
     padding: 0.6rem 1rem;
     background-color: var(--primary-blue);
 
-    & .fa-bell {
+    .fa-bell {
       padding-right: 0.5rem;
     }
   }
@@ -109,7 +109,7 @@ header {
   text-align: center;
   background-image: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue));
 
-  & > * {
+  > * {
     margin-bottom: 1.5rem;
 
     &:last-child {
@@ -117,15 +117,15 @@ header {
     }
   }
 
-  & p {
+  p {
     color: var(--light-blue);
   }
 
-  & .searchContainer {
+  .searchContainer {
     display: inline-block;
     position: relative;
 
-    & .fa-search {
+    .fa-search {
       color: var(--light-grey);
       position: absolute;
       left: 0.75rem;
@@ -134,7 +134,7 @@ header {
       font-size: small;
     }
 
-    & input {
+    input {
       border: none;
       padding: 0.7rem;
       padding-left: 2.2rem;
@@ -150,14 +150,15 @@ header {
 }
 
 main {
-  & section {
+  section {
     display: flex;
     flex-direction: column;
     padding: 1.8rem;
     gap: 1rem;
 
-    & .featuredHeading {
+    .featuredHeading {
       margin-top: 2rem;
+
       & :first-child {
         padding-bottom: 0.5rem;
         color: var(--light-black);
@@ -168,20 +169,20 @@ main {
       }
     }
 
-    & article {
+    article {
       max-width: 43rem;
       margin-bottom: 1rem;
       border-radius: calc(var(--border-radius) * 2);
       box-shadow: var(--box-shadow);
 
-      & img {
+      img {
         width: 100%;
         max-height: 15rem;
         object-fit: cover;
         border-radius: calc(var(--border-radius) * 2) calc(var(--border-radius) * 2) 0 0;
       }
 
-      & .topicDate {
+      .topicDate {
         display: flex;
         justify-content: flex-start;
         padding: 1rem;
@@ -199,13 +200,13 @@ main {
           color: var(--medium-grey);
         }
 
-        & .heyImGreen {
+        .heyImGreen {
           color: var(--text-green);
           background-color: var(--text-green-accent);
         }
       }
 
-      & .articleInfo {
+      .articleInfo {
         color: var(--medium-grey);
         padding: 0 1rem;
 
@@ -215,23 +216,23 @@ main {
         }
       }
 
-      & .articleBottom {
+      .articleBottom {
         display: flex;
         justify-content: space-between;
         color: var(--medium-light-grey);
         padding: 1rem;
 
-        & .authorInfo {
+        .authorInfo {
           display: flex;
 
-          & .profilePicture {
+          .profilePicture {
             width: 3rem;
             height: 3rem;
             object-fit: cover;
             border-radius: 50%;
           }
 
-          & .nameAndJob {
+          .nameAndJob {
             padding-top: 0.3rem;
 
             & :first-child {
@@ -239,28 +240,28 @@ main {
             }
           }
 
-          & > * {
+          > * {
             margin: 0.5rem;
           }
 
-          & h4 {
+          h4 {
             color: var(--light-black);
           }
         }
 
-        & > p {
+        > p {
           padding-top: 1.2rem;
         }
       }
     }
   }
 
-  & .pageNavigation ul {
+  .pageNavigation ul {
     display: flex;
     justify-content: center;
     padding: 1rem;
 
-    & button {
+    button {
       padding: 1rem 0.9rem;
       background-color: transparent;
       border: none;
@@ -280,7 +281,7 @@ main {
       color: white;
     }
 
-    & li {
+    li {
       border-radius: var(--border-radius);
       margin: 2px;
       padding: 0 1rem;
@@ -291,20 +292,20 @@ main {
 aside {
   padding: 2rem 0;
 
-  & h2 {
+  h2 {
     font-size: larger;
     font-weight: bold;
   }
 
-  & > :nth-child(2) {
+  > :nth-child(2) {
     background-color: var(--primary-blue);
     color: white;
 
-    & p {
+    p {
       color: var(--blue-white);
     }
 
-    & input,
+    input,
     button {
       border-radius: var(--border-radius);
       border: none;
@@ -312,17 +313,17 @@ aside {
       font-size: large;
     }
 
-    & input {
+    input {
       color: var(--light-grey);
     }
 
-    & button {
+    button {
       color: var(--primary-blue);
       font-weight: 500;
     }
   }
 
-  & .card {
+  .card {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -333,37 +334,37 @@ aside {
     margin: 1.6rem 0;
     box-shadow: var(--box-shadow);
 
-    & nav li {
+    nav li {
       display: flex;
       justify-content: space-between;
       color: var(--light-grey);
       padding: 0.6rem 0.5rem;
 
-      & a {
+      a {
         text-decoration: none;
         color: var(--medium-grey);
       }
     }
 
-    & article {
+    article {
       display: flex;
       gap: 1rem;
 
-      & .articleInfo {
+      .articleInfo {
         padding-top: var(--border-radius);
 
-        & p {
+        p {
           color: var(--light-black);
           font-weight: 550;
         }
 
-        & small {
+        small {
           color: var(--medium-light-grey);
         }
       }
     }
 
-    & img {
+    img {
       width: 4rem;
       height: 4rem;
       border-radius: var(--border-radius);
@@ -378,7 +379,7 @@ footer {
   color: var(--light-grey);
   padding: 0 13rem;
 
-  & #footerMainDiv {
+  #footerMainDiv {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -386,44 +387,44 @@ footer {
     padding-top: 4rem;
     padding-bottom: 1rem;
 
-    & > :first-child i {
+    > :first-child i {
       margin-right: 1rem;
     }
 
-    & > :last-child {
+    > :last-child {
       margin-right: 5rem;
-      & i {
+      i {
         margin-right: 0.7rem;
       }
     }
 
-    & h2 {
+    h2 {
       color: white;
       padding-bottom: 1rem;
     }
 
-    & #techDiv {
+    #techDiv {
       width: 17rem;
       padding-bottom: 1rem;
     }
 
-    & ul li {
+    ul li {
       padding: 0.7rem 0;
       margin-left: 0;
     }
 
-    & a {
+    a {
       text-decoration: none;
       color: var(--light-grey);
     }
   }
 
-  & #footerBottom {
+  #footerBottom {
     display: flex;
     justify-content: space-between;
     padding: 2rem 0;
 
-    & span {
+    span {
       color: var(--light-red);
       padding: 0 0.3rem;
     }
