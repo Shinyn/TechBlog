@@ -263,6 +263,7 @@ main {
 
     button {
       padding: 1rem 0.9rem;
+      font-size: larger;
       background-color: transparent;
       border: none;
       border-radius: var(--border-radius);
@@ -274,6 +275,9 @@ main {
 
     & :first-child button {
       color: var(--light-grey);
+      &:hover {
+        cursor: default;
+      }
     }
 
     & :nth-child(2) button {
